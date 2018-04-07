@@ -42,11 +42,31 @@ namespace RobotWars.RobotData
 
         private void RotateLeft()
         {
-            Agent.AgentTelemetry.Direction = (CardinalDirection)(((int)Agent.AgentTelemetry.Direction - 1) % 4);
+            switch(Agent.AgentTelemetry.Direction)
+            {
+                case CardinalDirection.North:
+                    Agent.AgentTelemetry.Direction = CardinalDirection.West; break;
+                case CardinalDirection.West:
+                    Agent.AgentTelemetry.Direction = CardinalDirection.South; break;
+                case CardinalDirection.South:
+                    Agent.AgentTelemetry.Direction = CardinalDirection.East; break;
+                case CardinalDirection.East:
+                    Agent.AgentTelemetry.Direction = CardinalDirection.North; break;
+            }
         }
         private void RotateRight()
         {
-            Agent.AgentTelemetry.Direction = (CardinalDirection)(((int)Agent.AgentTelemetry.Direction + 1) % 4);
+            switch (Agent.AgentTelemetry.Direction)
+            {
+                case CardinalDirection.North:
+                    Agent.AgentTelemetry.Direction = CardinalDirection.East; break;
+                case CardinalDirection.West:
+                    Agent.AgentTelemetry.Direction = CardinalDirection.North; break;
+                case CardinalDirection.South:
+                    Agent.AgentTelemetry.Direction = CardinalDirection.West; break;
+                case CardinalDirection.East:
+                    Agent.AgentTelemetry.Direction = CardinalDirection.South; break;
+            }
         }
         private void Advance()
         {
