@@ -37,6 +37,11 @@ namespace RobotWars.RobotData
             return !t1.Equals(t2);
         }
 
+        public override string ToString()
+        {
+            return $"{Location.X}, {Location.Y}, {ShortDirection()}";
+        }
+
         public void UpdateX(int x)
         {
             Location = new Point(x, Location.Y);
@@ -44,6 +49,18 @@ namespace RobotWars.RobotData
         public void UpdateY(int y)
         {
             Location = new Point(Location.X, y);
+        }
+
+        private char ShortDirection()
+        {
+            switch (Direction)
+            {
+                case CardinalDirection.East: return 'E';
+                case CardinalDirection.North: return 'N';
+                case CardinalDirection.South: return 'S';
+                case CardinalDirection.West: return 'W';
+            }
+            return ' ';
         }
     }
 
