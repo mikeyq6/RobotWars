@@ -9,6 +9,7 @@ namespace RobotWars.Tests
     public class RobotWarsTests
     {
         Robot robot = null;
+        Arena arena = null;
         RobotMover mover = null;
         Telemetry initial = null, expected = null;
 
@@ -17,6 +18,7 @@ namespace RobotWars.Tests
         {
             initial = new Telemetry();
             expected = new Telemetry();
+            arena = new Arena(5, 5);
         }
 
         [TestMethod]
@@ -29,7 +31,7 @@ namespace RobotWars.Tests
             expected.Direction = CardinalDirection.North;
             int expectedPenalties = 0;
             robot = new Robot(initial);
-            mover = new RobotMover(robot);
+            mover = new RobotMover(robot, arena);
 
             string instructions = "MLMRMMMRMMRR";
 
@@ -51,7 +53,7 @@ namespace RobotWars.Tests
             expected.Direction = CardinalDirection.West;
             int expectedPenalties = 1;
             robot = new Robot(initial);
-            mover = new RobotMover(robot);
+            mover = new RobotMover(robot, arena);
 
             string instructions = "LMLLMMLMMMRMM";
 
@@ -73,7 +75,7 @@ namespace RobotWars.Tests
             expected.Direction = CardinalDirection.North;
             int expectedPenalties = 0;
             robot = new Robot(initial);
-            mover = new RobotMover(robot);
+            mover = new RobotMover(robot, arena);
 
             string instructions = "MLMLMLM RMRMRMRM";
 
@@ -95,7 +97,7 @@ namespace RobotWars.Tests
             expected.Direction = CardinalDirection.South;
             int expectedPenalties = 3;
             robot = new Robot(initial);
-            mover = new RobotMover(robot);
+            mover = new RobotMover(robot, arena);
 
             string instructions = "MMLMMLMMMMM";
 

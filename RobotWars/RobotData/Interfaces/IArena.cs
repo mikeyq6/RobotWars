@@ -9,6 +9,6 @@ namespace RobotWars.RobotData
     {
         int Width { get; }
         int Height { get; }
-        bool IsFacingWall(CardinalDirection direction);
+        bool IsFacingWall(Telemetry telemetry);
     }
 }

@@ -9,10 +9,12 @@ namespace RobotWars.RobotData
     public class RobotMover : IMover
     {
         public IAgent Agent { get; }
+        public IArena Arena { get; }
 
-        public RobotMover(IAgent agent)
+        public RobotMover(IAgent agent, IArena arena)
         {
             Agent = agent;
+            Arena = arena;
         }
 
         public void RunInstructions(char[] insructions)

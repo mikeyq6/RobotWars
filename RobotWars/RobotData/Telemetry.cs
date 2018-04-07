@@ -24,6 +24,10 @@ namespace RobotWars.RobotData
                 t.Location.Y == Location.Y &&
                 t.Direction == Direction;
         }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
 
         public static bool operator ==(Telemetry t1, Telemetry t2)
         {
