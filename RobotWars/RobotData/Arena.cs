@@ -22,11 +22,11 @@ namespace RobotWars.RobotData
             switch(telemetry.Direction)
             {
                 case CardinalDirection.North:
-                    return telemetry.Location.Y == Height;
+                    return telemetry.Location.Y == Height-1;
                 case CardinalDirection.South:
                     return telemetry.Location.Y == 0;
                 case CardinalDirection.East:
-                    return telemetry.Location.X == Width;
+                    return telemetry.Location.X == Width-1;
                 case CardinalDirection.West:
                     return telemetry.Location.X == 0;
             }
