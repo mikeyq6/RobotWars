@@ -40,5 +40,71 @@ namespace RobotWars.Tests
             Assert.AreEqual(initial, expected, "The location does not match the expected location");
             Assert.AreEqual(expectedPenalties, robot.Penalties, "Number of penalties does not match");
         }
+
+        [TestMethod]
+        public void TestScenario2()
+        {
+            // Arrange
+            initial.Location = new Point(4, 4);
+            initial.Direction = CardinalDirection.South;
+            expected.Location = new Point(0, 1);
+            expected.Direction = CardinalDirection.West;
+            int expectedPenalties = 1;
+            robot = new Robot(initial);
+            mover = new RobotMover(robot);
+
+            string instructions = "LMLLMMLMMMRMM";
+
+            // Act
+            mover.RunInstructions(instructions.ToCharArray());
+
+            // Assert
+            Assert.AreEqual(initial, expected, "The location does not match the expected location");
+            Assert.AreEqual(expectedPenalties, robot.Penalties, "Number of penalties does not match");
+        }
+
+        [TestMethod]
+        public void TestScenario3()
+        {
+            // Arrange
+            initial.Location = new Point(2, 2);
+            initial.Direction = CardinalDirection.West;
+            expected.Location = new Point(2, 2);
+            expected.Direction = CardinalDirection.North;
+            int expectedPenalties = 0;
+            robot = new Robot(initial);
+            mover = new RobotMover(robot);
+
+            string instructions = "MLMLMLM RMRMRMRM";
+
+            // Act
+            mover.RunInstructions(instructions.ToCharArray());
+
+            // Assert
+            Assert.AreEqual(initial, expected, "The location does not match the expected location");
+            Assert.AreEqual(expectedPenalties, robot.Penalties, "Number of penalties does not match");
+        }
+
+        [TestMethod]
+        public void TestScenario4()
+        {
+            // Arrange
+            initial.Location = new Point(1, 3);
+            initial.Direction = CardinalDirection.North;
+            expected.Location = new Point(0, 0);
+            expected.Direction = CardinalDirection.South;
+            int expectedPenalties = 3;
+            robot = new Robot(initial);
+            mover = new RobotMover(robot);
+
+            string instructions = "MMLMMLMMMMM";
+
+            // Act
+            mover.RunInstructions(instructions.ToCharArray());
+
+            // Assert
+            Assert.AreEqual(initial, expected, "The location does not match the expected location");
+            Assert.AreEqual(expectedPenalties, robot.Penalties, "Number of penalties does not match");
+        }
     }
 }

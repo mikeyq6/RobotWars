@@ -33,6 +33,8 @@ namespace RobotWars.RobotData
                     RotateRight(); break;
                 case 'M':
                     Advance(); break;
+                default:
+                    break; // Ignore any other kinds of codes
             }
         }
 
