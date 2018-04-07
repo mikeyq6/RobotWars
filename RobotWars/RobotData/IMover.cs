@@ -8,7 +8,9 @@ namespace RobotWars.RobotData
 {
     public interface IMover
     {
+        IAgent Agent { get; }
 
-        void Move(IAgent agent, char instruction);
+        void RunInstructions(char[] insructions);
+        void Move(char instruction);
     }
 }

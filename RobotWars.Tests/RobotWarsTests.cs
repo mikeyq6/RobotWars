@@ -9,12 +9,12 @@ namespace RobotWars.Tests
     public class RobotWarsTests
     {
         Robot robot = null;
+        RobotMover mover = null;
         Telemetry initial = null, expected = null;
 
         [TestInitialize]
         public void InitTest()
         {
-            robot = new Robot();
             initial = new Telemetry();
             expected = new Telemetry();
         }
@@ -27,8 +27,18 @@ namespace RobotWars.Tests
             initial.Direction = CardinalDirection.East;
             expected.Location = new Point(4,1);
             expected.Direction = CardinalDirection.North;
+            int expectedPenalties = 0;
+            robot = new Robot(initial);
+            mover = new RobotMover(robot);
 
             string instructions = "MLMRMMMRMMRR";
+
+            // Act
+            mover.RunInstructions(instructions.ToCharArray());
+
+            // Assert
+            Assert.AreEqual(initial, expected, "The location does not match the expected location");
+            Assert.AreEqual(expectedPenalties, robot.Penalties, "Number of penalties does not match");
         }
     }
 }
