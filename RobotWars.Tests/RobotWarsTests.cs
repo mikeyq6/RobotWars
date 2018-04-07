@@ -39,7 +39,7 @@ namespace RobotWars.Tests
             mover.RunInstructions(instructions.ToCharArray());
 
             // Assert
-            Assert.AreEqual(initial, expected, "The location does not match the expected location");
+            Assert.AreEqual(expected, robot.AgentTelemetry, $"The expected ({expected.ToString()}) does not match the result ({robot.AgentTelemetry})");
             Assert.AreEqual(expectedPenalties, robot.Penalties, "Number of penalties does not match");
         }
 
@@ -61,7 +61,7 @@ namespace RobotWars.Tests
             mover.RunInstructions(instructions.ToCharArray());
 
             // Assert
-            Assert.AreEqual(initial, expected, "The location does not match the expected location");
+            Assert.AreEqual(expected, robot.AgentTelemetry, $"The expected ({expected.ToString()}) does not match the result ({robot.AgentTelemetry})");
             Assert.AreEqual(expectedPenalties, robot.Penalties, "Number of penalties does not match");
         }
 
@@ -83,7 +83,7 @@ namespace RobotWars.Tests
             mover.RunInstructions(instructions.ToCharArray());
 
             // Assert
-            Assert.AreEqual(initial, expected, "The location does not match the expected location");
+            Assert.AreEqual(expected, robot.AgentTelemetry, $"The expected ({expected.ToString()}) does not match the result ({robot.AgentTelemetry})");
             Assert.AreEqual(expectedPenalties, robot.Penalties, "Number of penalties does not match");
         }
 
@@ -105,7 +105,7 @@ namespace RobotWars.Tests
             mover.RunInstructions(instructions.ToCharArray());
 
             // Assert
-            Assert.AreEqual(initial, expected, "The location does not match the expected location");
+            Assert.AreEqual(expected, robot.AgentTelemetry, $"The expected ({expected.ToString()}) does not match the result ({robot.AgentTelemetry})");
             Assert.AreEqual(expectedPenalties, robot.Penalties, "Number of penalties does not match");
         }
     }
