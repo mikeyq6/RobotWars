@@ -1,5 +1,0 @@
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\bin\Debug\RobotWars.dll
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\bin\Debug\RobotWars.pdb
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\obj\Debug\RobotWars.csprojResolveAssemblyReference.cache
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\obj\Debug\RobotWars.dll
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\obj\Debug\RobotWars.pdb

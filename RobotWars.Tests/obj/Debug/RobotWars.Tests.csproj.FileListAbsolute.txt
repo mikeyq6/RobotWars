@@ -1,8 +1,0 @@
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars.Tests\obj\Debug\RobotWars.Tests.csprojResolveAssemblyReference.cache
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars.Tests\bin\Debug\RobotWars.Tests.dll
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars.Tests\bin\Debug\RobotWars.Tests.pdb
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars.Tests\bin\Debug\RobotWars.dll
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars.Tests\bin\Debug\RobotWars.pdb
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars.Tests\obj\Debug\RobotWars.Tests.dll
-Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars.Tests\obj\Debug\RobotWars.Tests.pdb
