@@ -9,9 +9,8 @@ namespace RobotWars.RobotData
 {
     public class Telemetry
     {
-        public Point Location { get; set; }
-        public CardinalDirection Direction { get; set; }
-
+        public Point Location { get; set; } = new Point(0, 0);
+        public CardinalDirection Direction { get; set; } = CardinalDirection.North;
 
         public override bool Equals(object value)
         {
@@ -36,6 +35,15 @@ namespace RobotWars.RobotData
         public static bool operator !=(Telemetry t1, Telemetry t2)
         {
             return !t1.Equals(t2);
+        }
+
+        public void UpdateX(int x)
+        {
+            Location = new Point(x, Location.Y);
+        }
+        public void UpdateY(int y)
+        {
+            Location = new Point(Location.X, y);
         }
     }
 

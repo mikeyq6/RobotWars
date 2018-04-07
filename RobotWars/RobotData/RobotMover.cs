@@ -50,7 +50,24 @@ namespace RobotWars.RobotData
         }
         private void Advance()
         {
-            ;
+            if(Arena.IsFacingWall(Agent.AgentTelemetry))
+            {
+                Agent.Penalties++;
+            }
+            else
+            {
+                switch(Agent.AgentTelemetry.Direction)
+                {
+                    case CardinalDirection.North:
+                        Agent.AgentTelemetry.UpdateY(Agent.AgentTelemetry.Location.Y+1); break;
+                    case CardinalDirection.South:
+                        Agent.AgentTelemetry.UpdateY(Agent.AgentTelemetry.Location.Y - 1); break;
+                    case CardinalDirection.East:
+                        Agent.AgentTelemetry.UpdateX(Agent.AgentTelemetry.Location.X + 1); break;
+                    case CardinalDirection.West:
+                        Agent.AgentTelemetry.UpdateX(Agent.AgentTelemetry.Location.X - 1); break;
+                }
+            }
         }
     }
 }

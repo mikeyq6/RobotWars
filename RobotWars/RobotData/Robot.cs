@@ -9,7 +9,7 @@ namespace RobotWars.RobotData
     public class Robot : IAgent
     {
         public Telemetry AgentTelemetry { get; }
-        public int Penalties { get; } = 0;
+        public int Penalties { get; set; } = 0;
 
         public Robot(Telemetry agentTelemetry)
         {

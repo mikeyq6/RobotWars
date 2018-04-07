@@ -9,7 +9,7 @@ namespace RobotWars.RobotData
     public interface IAgent
     {
         Telemetry AgentTelemetry { get; }
-        int Penalties { get; }
+        int Penalties { get; set; }
     }
 
 }
