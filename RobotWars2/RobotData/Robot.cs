@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotWars
+namespace RobotWars.RobotData
 {
-    class Program
+    public class Robot : IAgent
     {
-        static void Main(string[] args)
+        public Telemetry AgentTelemetry { get; set; }
+
+        public Robot()
         {
+
         }
     }
 }

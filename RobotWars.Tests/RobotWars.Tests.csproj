@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RobotWars\RobotWars.csproj">
-      <Project>{8815b56c-ef10-4b67-8d5d-e0ca91b1b5d7}</Project>
+      <Project>{bb0af9a9-5151-444c-9361-496e7218eee5}</Project>
       <Name>RobotWars</Name>
     </ProjectReference>
   </ItemGroup>

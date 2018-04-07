@@ -8,18 +8,27 @@ namespace RobotWars.Tests
     [TestClass]
     public class RobotWarsTests
     {
-        Robot robot;
+        Robot robot = null;
+        Telemetry initial = null, expected = null;
 
         [TestInitialize]
         public void InitTest()
         {
-
+            robot = new Robot();
+            initial = new Telemetry();
+            expected = new Telemetry();
         }
 
         [TestMethod]
         public void TestScenario1()
         {
-            Point initial = new Point(0, 2);
-                }
+            // Arrange
+            initial.Location = new Point(0, 2);
+            initial.Direction = CardinalDirection.East;
+            expected.Location = new Point(4,1);
+            expected.Direction = CardinalDirection.North;
+
+            string instructions = "MLMRMMMRMMRR";
+        }
     }
 }

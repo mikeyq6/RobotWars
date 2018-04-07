@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace RobotWars.RobotData
 {
-    public interface IAgent
+    public interface IMover
     {
-        Telemetry AgentTelemetry { get; }
-        int Penalties { get; }
-    }
 
+        void Move(IAgent agent, char instruction);
+    }
 }
