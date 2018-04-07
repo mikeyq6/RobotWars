@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotWars.Robot
+namespace RobotWars.RobotData
 {
     public class Telemetry
     {

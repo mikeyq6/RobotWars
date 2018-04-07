@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotWars.Robot
+namespace RobotWars.RobotData
 {
-    public interface IMover
+    public interface IAgent
     {
-
-        void Move(IAgent agent, char instruction);
+        Telemetry AgentTelemetry { get; set; }
     }
+
 }

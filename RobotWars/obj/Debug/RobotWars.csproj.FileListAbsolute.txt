@@ -1,2 +1,7 @@
 c:\users\mdann\documents\visual studio 2015\Projects\RobotWars\RobotWars\bin\Debug\RobotWars.exe.config
 Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\bin\Debug\RobotWars.exe.config
+Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\bin\Debug\RobotWars.exe
+Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\bin\Debug\RobotWars.pdb
+Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\obj\Debug\RobotWars.csprojResolveAssemblyReference.cache
+Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\obj\Debug\RobotWars.exe
+Y:\Documents\Visual Studio 2015\Projects\RobotWars\RobotWars\obj\Debug\RobotWars.pdb

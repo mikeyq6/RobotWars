@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,12 +46,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Robot\IAgent.cs" />
-    <Compile Include="Robot\IMover.cs" />
-    <Compile Include="Robot\MovementException.cs" />
-    <Compile Include="Robot\Robot.cs" />
-    <Compile Include="Robot\RobotMover.cs" />
-    <Compile Include="Robot\Telemetry.cs" />
+    <Compile Include="RobotData\IAgent.cs" />
+    <Compile Include="RobotData\IMover.cs" />
+    <Compile Include="RobotData\MovementException.cs" />
+    <Compile Include="RobotData\Robot.cs" />
+    <Compile Include="RobotData\RobotMover.cs" />
+    <Compile Include="RobotData\Telemetry.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
