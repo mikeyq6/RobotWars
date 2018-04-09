@@ -9,7 +9,19 @@ namespace RobotWars.RobotData
 {
     public class Telemetry
     {
-        public Point Location { get; set; } = new Point(0, 0);
+        private Point location;
+
+        public Point Location
+        {
+            get
+            {
+                return location;
+            }
+            set
+            {
+                location = value;
+            }
+        }
         public CardinalDirection Direction { get; set; } = CardinalDirection.North;
 
         public override bool Equals(object value)
@@ -44,11 +56,11 @@ namespace RobotWars.RobotData
 
         public void UpdateX(int x)
         {
-            Location = new Point(x, Location.Y);
+            location.X = x;
         }
         public void UpdateY(int y)
         {
-            Location = new Point(Location.X, y);
+            location.Y = y;
         }
 
         private char ShortDirection()
